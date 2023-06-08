@@ -3,7 +3,7 @@ root=Tk()
 root.geometry("420x270+50+80")
 root.resizable(True,True)
 root.title("Calculator")
-root.iconbitmap("C:\\Users\Shiwansh\\Downloads\\sasuke.ico")
+root.iconbitmap("C:\\Users\Shiwansh\\Downloads\\sasuke.ico")#loction of your icon image.
 root.config(bg="grey20")
 def show(op):
     x=a.set(a.get()+op)
