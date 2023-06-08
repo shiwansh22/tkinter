@@ -8,7 +8,7 @@ root=Tk()
 root.geometry("1400x700+50+50")
 root.resizable(1,1)
 root.title("Coursera(Signup page)")
-root.iconbitmap("C:\\Users\\Shiwansh\\Downloads\\coursera-logo.ico")
+root.iconbitmap("C:\\Users\\Shiwansh\\Downloads\\coursera-logo.ico")#location of your icon image.
 root.config(bg="grey17")
 
 """Labeling"""
@@ -104,8 +104,7 @@ rad.place(x="673",y="385",width="100",height="50")
 rad1= Radiobutton(root,text="Female",value=2,borderwidth="7",variable=v0,fg="whitesmoke",bg="grey19",command=opt)
 rad1.place(x="673",y="437",width="100",height="50")
 """connecting to excel sheet file"""
-wb=openpyxl.load_workbook("C:\\Users\\Shiwansh\\OneDrive\\Desktop\\registration.xlsx")
-# wb=openpyxl.load_workbook(r"C:\Users\Shiwansh\OneDrive\Desktop\Book1.xlsx")
+wb=openpyxl.load_workbook("C:\\Users\\Shiwansh\\OneDrive\\Desktop\\registration.xlsx")#location of your excel file.
 sheet=wb.active
 """function"""
 def sign():
@@ -117,8 +116,7 @@ def sign():
     l3=cc.get()
     lst=[na,pa,ge,l1,l2,l3]
     sheet.append(lst)
-    wb.save("C:\\Users\\Shiwansh\\OneDrive\\Desktop\\registration.xlsx")
-    # wb.save(r"C:\Users\Shiwansh\OneDrive\Desktop\Book1.xlsx")
+    wb.save("C:\\Users\\Shiwansh\\OneDrive\\Desktop\\registration.xlsx")#location of your excel file.
     di=Label(root,borderwidth="7",text="SignIn Sucessful!")
     di.place(x="745",y="690")
 
